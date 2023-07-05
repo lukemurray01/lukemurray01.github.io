@@ -1,0 +1,7 @@
+/* Dark Mode Styles */
+body {
+  background-color: #1e1e1e;
+  color: #f8f8f8;
+}
+
+/* Add any additional custom styles here */
