@@ -1,19 +1,15 @@
-<!DOCTYPE HTML>
-<!-- Built on Phantom by HTML5 UP (html5up.net | @ajlkn) — CCA 3.0 license. -->
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		{%- include head.html -%}
 	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			{%- include header.html -%}
-			<div id="main">
-				<div class="inner">
-					{{ content }}
-				</div>
+	<body>
+		{%- include header.html -%}
+		<main>
+			<div class="container">
+				{{ content }}
 			</div>
-			{%- include footer.html -%}
-		</div>
-		{%- include scripts.html -%}
+		</main>
+		{%- include footer.html -%}
 	</body>
 </html>

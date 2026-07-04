@@ -16,10 +16,11 @@
 <meta property="og:description" content="{{ desc }}" />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
 <link rel="icon" href="{{ '/images/logo.svg' | relative_url }}" />
-<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
 {%- if page.mathjax %}
 <script>
   window.MathJax = {

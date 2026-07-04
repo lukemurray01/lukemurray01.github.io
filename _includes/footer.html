@@ -1,16 +1,11 @@
-<footer id="footer">
-	<div class="inner">
-		<section>
-			<h2>Connect</h2>
-			<ul class="icons">
-				<li><a href="https://github.com/{{ site.github_username }}" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-				<!-- Add your LinkedIn: replace # with your profile URL -->
-				<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:{{ site.email }}" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
-		</section>
-		<ul class="copyright">
-			<li>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
+<footer class="site-foot">
+	<div class="site-foot__inner">
+		<span>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</span>
+		<nav class="site-foot__links" aria-label="Social">
+			<a href="https://github.com/{{ site.github_username }}">GitHub</a>
+			<!-- Add your LinkedIn: replace # with your profile URL -->
+			<a href="#">LinkedIn</a>
+			<a href="mailto:{{ site.email }}">Email</a>
+		</nav>
 	</div>
 </footer>

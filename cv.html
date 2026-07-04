@@ -5,11 +5,10 @@ seo_title: Luke Murray — CV
 description: Curriculum vitae for Luke Murray — physics & mathematics student focused on stochastic numerics, quantitative finance, data science and risk.
 ---
 
-<!-- CV header -->
-<div class="cv-header">
+<div class="cv-top">
 	<div>
-		<h1 style="margin-bottom:0.1em;">Luke Murray</h1>
-		<p class="subtle" style="margin:0;">Physics &amp; Mathematics · Quant / Data Science / Risk</p>
+		<h1 style="margin-bottom:0.15rem;">Luke Murray</h1>
+		<p class="muted" style="margin:0;">Physics &amp; Mathematics · Quant / Data Science / Risk</p>
 	</div>
 	<ul class="contact">
 		<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -19,12 +18,12 @@ description: Curriculum vitae for Luke Murray — physics & mathematics student 
 	</ul>
 </div>
 
-<ul class="actions no-print">
-	<!-- "Download PDF" uses the browser's print-to-PDF (the print stylesheet renders a
-	     clean black-on-white CV). To offer a hand-made PDF instead, drop it at
+<div class="btn-row no-print" style="margin-bottom:0.5rem;">
+	<!-- "Download PDF" uses the browser's print-to-PDF (the print stylesheet renders a clean
+	     black-on-white CV). To offer a hand-made PDF instead, drop it at
 	     assets/Luke-Murray-CV.pdf and change the href below to it. -->
-	<li><a href="javascript:window.print()" class="button primary icon solid fa-download">Download PDF</a></li>
-</ul>
+	<a href="javascript:window.print()" class="btn">Download PDF</a>
+</div>
 
 <section class="section">
 	<h2>Summary</h2>
@@ -32,8 +31,8 @@ description: Curriculum vitae for Luke Murray — physics & mathematics student 
 		Physics and mathematics student with a strong quantitative and computational
 		orientation. Thesis on stochastic numerics for CIR and CEV processes. Comfortable
 		moving from mathematical derivation to reproducible Python code and clear write-ups.
-		Seeking internship and graduate opportunities in quantitative finance, data science
-		and risk.
+		Seeking internship and graduate opportunities in quantitative finance, data science and
+		risk.
 	</p>
 </section>
 
@@ -44,7 +43,7 @@ description: Curriculum vitae for Luke Murray — physics & mathematics student 
 			<h3>BSc Physics &amp; Mathematics</h3>
 			<span class="when">Update: years</span>
 		</div>
-		<p class="subtle" style="margin:0 0 0.5em 0;">University College Cork <em>(update if different)</em></p>
+		<p class="muted" style="margin:0 0 0.5rem;">University College Cork <em>(update if different)</em></p>
 		<p>
 			Thesis: <em>Stochastic numerics for CIR and CEV processes</em> — positivity-preserving
 			discretisation schemes and their convergence. Relevant coursework: Fourier Methods,
@@ -57,19 +56,15 @@ description: Curriculum vitae for Luke Murray — physics & mathematics student 
 
 <section class="section">
 	<h2>Technical Skills</h2>
-	<div class="row">
-		<div class="col-6 col-12-medium">
-			<ul class="alt">
-				<li><strong>Programming:</strong> Python, NumPy, SciPy, Matplotlib, Jupyter</li>
-				<li><strong>Tooling:</strong> Git, GitHub, LaTeX</li>
-			</ul>
-		</div>
-		<div class="col-6 col-12-medium">
-			<ul class="alt">
-				<li><strong>Mathematics:</strong> stochastic calculus/SDEs, Fourier analysis, linear algebra, ODEs/PDEs, numerical methods</li>
-				<li><strong>Quantitative:</strong> Monte Carlo, probability &amp; statistics, modelling</li>
-			</ul>
-		</div>
+	<div class="two-col">
+		<ul>
+			<li><strong>Programming:</strong> Python, NumPy, SciPy, Matplotlib, Jupyter</li>
+			<li><strong>Tooling:</strong> Git, GitHub, LaTeX</li>
+		</ul>
+		<ul>
+			<li><strong>Mathematics:</strong> stochastic calculus/SDEs, Fourier analysis, linear algebra, ODEs/PDEs, numerical methods</li>
+			<li><strong>Quantitative:</strong> Monte Carlo, probability &amp; statistics, modelling</li>
+		</ul>
 	</div>
 </section>
 
@@ -82,16 +77,15 @@ description: Curriculum vitae for Luke Murray — physics & mathematics student 
 	</div>
 	<div class="cv-entry">
 		<h3><a href="{{ '/notes.html' | relative_url }}">Computational lecture notes &amp; solutions</a></h3>
-		<p>Typed notes and worked examples across physics &amp; maths, each checked computationally
-			in Python and published as Jupyter notebooks.</p>
+		<p>Typed notes and worked examples across physics &amp; maths, each checked computationally in
+			Python and published as Jupyter notebooks.</p>
 	</div>
 </section>
 
 <section class="section">
 	<h2>Additional</h2>
 	<ul>
-		<li>Maintain a public portfolio and blog at
-			<a href="{{ site.url }}">lukemurray01.github.io</a>.</li>
+		<li>Maintain a public portfolio and blog at <a href="{{ site.url }}">lukemurray01.github.io</a>.</li>
 		<li><em>Add here: awards, languages, activities, work experience.</em></li>
 	</ul>
 </section>
