@@ -6,24 +6,18 @@ description: Introductory Physics II — eleven lectures of foundational physics
 
 <h1>Introductory Physics II</h1>
 
-<div class="project-intro">
+<div class="callout">
 	<p>Eleven lectures of foundational physics, each accompanied by computational worked
 		examples that check the results numerically in Python.</p>
-	<p class="stack">Stack: Python · NumPy · Matplotlib · Jupyter · LaTeX</p>
+	<p class="stack">Python · NumPy · Matplotlib · Jupyter · LaTeX</p>
 </div>
 
 <h2>Lectures</h2>
-<div class="row">
-	{% assign lectures = "1,2,3,4,5,6,7,8,9,10,11" | split: "," %}
+<ul class="linklist">
+	{%- assign lectures = "1,2,3,4,5,6,7,8,9,10,11" | split: "," %}
 	{%- for n in lectures %}
-	<div class="col-6 col-12-medium">
-		<ul class="actions stacked">
-			<li><a href="PY1053/PY1053.{{ n }}.html" class="button primary fit">Introductory Physics II — Lecture {{ n }}</a></li>
-		</ul>
-	</div>
+	<li><a href="PY1053/PY1053.{{ n }}.html">Lecture {{ n }}</a></li>
 	{%- endfor %}
-</div>
-
-<ul class="actions">
-	<li><a href="{{ '/notes.html' | relative_url }}" class="button">&larr; All notes</a></li>
 </ul>
+
+<a href="{{ '/notes.html' | relative_url }}" class="back-link">&larr; All notes</a>

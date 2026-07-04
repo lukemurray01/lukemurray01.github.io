@@ -2,29 +2,25 @@
 layout: default
 ---
 <article class="post">
-	<header class="post-header">
-		<p class="post-meta">
-			<a href="{{ '/blog.html' | relative_url }}">Blog</a>
-			<span aria-hidden="true"> · </span>
-			<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-			{%- if page.reading_time %} <span aria-hidden="true"> · </span>{{ page.reading_time }}{% endif %}
-		</p>
-		<h1>{{ page.title }}</h1>
-		{%- if page.subtitle %}<p class="tagline" style="text-align:left;max-width:none;">{{ page.subtitle }}</p>{% endif %}
-		{%- if page.tags and page.tags.size > 0 %}
-		<ul class="badges" style="margin-top:0.5em;">
-			{%- for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
-		</ul>
-		{%- endif %}
-	</header>
+	<p class="post__meta">
+		<a href="{{ '/blog.html' | relative_url }}">Blog</a>
+		<span aria-hidden="true"> · </span>
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+		{%- if page.reading_time %} <span aria-hidden="true"> · </span>{{ page.reading_time }}{% endif %}
+	</p>
+	<h1 class="post__title">{{ page.title }}</h1>
+	{%- if page.subtitle %}<p class="post__sub">{{ page.subtitle }}</p>{% endif %}
+	{%- if page.tags and page.tags.size > 0 %}
+	<ul class="tags">
+		{%- for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+	</ul>
+	{%- endif %}
 
-	<div class="post-content">
+	<div class="post__body">
 		{{ content }}
 	</div>
 
-	<footer class="post-footer">
-		<ul class="actions">
-			<li><a href="{{ '/blog.html' | relative_url }}" class="button">&larr; All posts</a></li>
-		</ul>
+	<footer class="post__foot">
+		<a href="{{ '/blog.html' | relative_url }}" class="btn btn--ghost">&larr; All posts</a>
 	</footer>
 </article>

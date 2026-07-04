@@ -9,14 +9,15 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 	<!-- To add a headshot: drop a square image at images/profile.jpg and replace the
 	     placeholder <div> below with:
 	     <img class="avatar" src="{{ '/images/profile.jpg' | relative_url }}" alt="Luke Murray" /> -->
-	<div class="avatar-placeholder"><span>LM</span></div>
+	<div class="avatar-ph">LM</div>
 	<h1>Luke Murray</h1>
-	<p class="tagline">
-		Physics &amp; mathematics student working on <strong>stochastic numerics for CIR
-		and CEV processes</strong>. I turn rigorous maths into reproducible Python — with
-		an eye on <strong>quantitative finance, data science and risk</strong>.
+	<p class="role">Physics &amp; Mathematics · Quant / Data Science / Risk</p>
+	<p class="lead">
+		I work on <strong>stochastic numerics for CIR and CEV processes</strong> and turn
+		rigorous maths into reproducible Python — with an eye on quantitative finance,
+		data science and risk.
 	</p>
-	<ul class="badges">
+	<ul class="tags">
 		<li>Stochastic Calculus</li>
 		<li>Monte Carlo</li>
 		<li>Python</li>
@@ -24,48 +25,46 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 		<li>Fourier Analysis</li>
 		<li>Numerical Methods</li>
 	</ul>
-	<ul class="actions">
-		<li><a href="#projects" class="button primary">Featured work</a></li>
-		<li><a href="{{ '/cv.html' | relative_url }}" class="button">View CV</a></li>
-	</ul>
+	<div class="btn-row">
+		<a href="#work" class="btn">Featured work</a>
+		<a href="{{ '/cv.html' | relative_url }}" class="btn btn--ghost">View CV</a>
+	</div>
 </section>
 
 <!-- About -->
 <section id="about" class="section">
 	<h2>About</h2>
-	<div class="row">
-		<div class="col-8 col-12-medium">
+	<div class="split">
+		<div>
 			<p>
-				I'm a physics and mathematics student who enjoys turning abstract theory
-				into working code. My thesis is on <strong>stochastic numerics for the CIR
-				and CEV processes</strong> — the mean-reverting and constant-elasticity-of-variance
-				diffusions that sit under interest-rate and equity/volatility models — where
-				the mathematical challenge is simulating them accurately without breaking
-				positivity or losing convergence order.
+				I'm a physics and mathematics student who enjoys turning abstract theory into
+				working code. My thesis is on <strong>stochastic numerics for the CIR and CEV
+				processes</strong> — the mean-reverting and constant-elasticity-of-variance
+				diffusions underlying interest-rate and equity/volatility models — where the
+				challenge is simulating them accurately without breaking positivity or losing
+				convergence order.
 			</p>
 			<p>
 				That workflow — <em>rigorous maths → reproducible code → clear
-				communication</em> — is exactly what quantitative finance, data science and
-				risk rely on. I'm looking for internships and graduate opportunities where I
-				can apply strong mathematical modelling and Python to real problems.
+				communication</em> — is exactly what quantitative finance, data science and risk
+				rely on. I'm looking for internships and graduate opportunities where I can apply
+				strong mathematical modelling and Python to real problems.
 			</p>
 		</div>
-		<div class="col-4 col-12-medium">
-			<ul class="alt">
-				<li><strong>Focus:</strong> Quant · Data Science · Risk</li>
-				<li><strong>Thesis:</strong> Stochastic numerics, CIR &amp; CEV</li>
-				<li><strong>Tools:</strong> Python, NumPy, Matplotlib, Jupyter</li>
-				<li><strong>Also:</strong> LaTeX, Git, scientific writing</li>
-			</ul>
-		</div>
+		<ul class="facts">
+			<li><strong>Focus</strong> Quant · Data Science · Risk</li>
+			<li><strong>Thesis</strong> Stochastic numerics, CIR &amp; CEV</li>
+			<li><strong>Tools</strong> Python, NumPy, Matplotlib, Jupyter</li>
+			<li><strong>Also</strong> LaTeX, Git, scientific writing</li>
+		</ul>
 	</div>
 </section>
 
 <!-- Skills -->
 <section id="skills" class="section">
 	<h2>Skills</h2>
-	<div class="skills">
-		<div class="skill-card">
+	<div class="cols-3">
+		<div class="skill">
 			<h3>Programming</h3>
 			<ul>
 				<li>Python (NumPy, SciPy, Matplotlib)</li>
@@ -75,7 +74,7 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 				<li>LaTeX &amp; Git</li>
 			</ul>
 		</div>
-		<div class="skill-card">
+		<div class="skill">
 			<h3>Mathematics</h3>
 			<ul>
 				<li>Stochastic calculus &amp; SDEs</li>
@@ -85,7 +84,7 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 				<li>Numerical &amp; computational methods</li>
 			</ul>
 		</div>
-		<div class="skill-card">
+		<div class="skill">
 			<h3>Quantitative</h3>
 			<ul>
 				<li>Probability &amp; statistics</li>
@@ -99,65 +98,47 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 </section>
 
 <!-- Featured work -->
-<section id="projects" class="section">
+<section id="work" class="section">
 	<h2>Featured work</h2>
-	<p class="subtle">Curated pieces that show the maths, the Python and the write-up behind them.</p>
-	<section class="tiles">
-		<article class="style5">
-			<span class="image">
-				<img src="{{ '/images/pic13.jpg' | relative_url }}" alt="" />
-			</span>
-			<a href="{{ '/blog/cir-cev-stochastic-numerics/' | relative_url }}">
-				<h2>Stochastic Numerics: CIR &amp; CEV</h2>
-				<div class="content">
-					<p>Why naïve Euler breaks on square-root and CEV diffusions — and the
-						schemes that fix it. My thesis area, written up.</p>
-				</div>
-			</a>
-		</article>
-		<article class="style3">
-			<span class="image">
-				<img src="{{ '/images/pic02.jpg' | relative_url }}" alt="" />
-			</span>
-			<a href="{{ '/notes.html' | relative_url }}">
-				<h2>Computational Lecture Notes</h2>
-				<div class="content">
-					<p>Typed notes and worked solutions across physics &amp; maths, each
-						checked computationally in Python.</p>
-				</div>
-			</a>
-		</article>
-		<article class="style2">
-			<span class="image">
-				<img src="{{ '/images/pic07.jpg' | relative_url }}" alt="" />
-			</span>
-			<a href="{{ '/blog.html' | relative_url }}">
-				<h2>Blog</h2>
-				<div class="content">
-					<p>Short expositions on stochastic numerics, quantitative methods and
-						the maths behind them.</p>
-				</div>
-			</a>
-		</article>
-	</section>
+	<p class="muted">Curated pieces that show the maths, the Python and the write-up behind them.</p>
+	<div class="cards">
+		<a class="card" href="{{ '/blog/cir-cev-stochastic-numerics/' | relative_url }}">
+			<span class="card__kicker">Thesis · Blog</span>
+			<h3>Stochastic Numerics: CIR &amp; CEV</h3>
+			<p>Why naïve Euler breaks on square-root and CEV diffusions — and the schemes that fix it.</p>
+			<span class="card__arrow">Read &rarr;</span>
+		</a>
+		<a class="card" href="{{ '/notes.html' | relative_url }}">
+			<span class="card__kicker">Notes</span>
+			<h3>Computational Lecture Notes</h3>
+			<p>Typed notes and worked solutions across physics &amp; maths, checked in Python.</p>
+			<span class="card__arrow">Browse &rarr;</span>
+		</a>
+		<a class="card" href="{{ '/blog.html' | relative_url }}">
+			<span class="card__kicker">Writing</span>
+			<h3>Blog</h3>
+			<p>Short expositions on stochastic numerics, quantitative methods and the maths behind them.</p>
+			<span class="card__arrow">All posts &rarr;</span>
+		</a>
+	</div>
 </section>
 
 <!-- Latest from the blog -->
 {%- if site.posts.size > 0 %}
 <section id="latest" class="section">
 	<h2>From the blog</h2>
-	<ul class="post-list">
+	<ul class="posts">
 		{%- for post in site.posts limit: 4 %}
 		<li>
-			<span class="post-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-			<a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-			{%- if post.subtitle %}<span class="post-list-desc">{{ post.subtitle }}</span>{% endif %}
+			<span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+			<a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			{%- if post.subtitle %}<p class="desc">{{ post.subtitle }}</p>{% endif %}
 		</li>
 		{%- endfor %}
 	</ul>
-	<ul class="actions">
-		<li><a href="{{ '/blog.html' | relative_url }}" class="button">All posts</a></li>
-	</ul>
+	<div class="btn-row" style="margin-top:1.5rem;">
+		<a href="{{ '/blog.html' | relative_url }}" class="btn btn--ghost">All posts</a>
+	</div>
 </section>
 {%- endif %}
 
@@ -165,8 +146,8 @@ description: Luke Murray — physics & mathematics student focused on stochastic
 <section id="contact" class="section">
 	<h2>Get in touch</h2>
 	<p>The quickest way to reach me is by email. You can also find my code on GitHub.</p>
-	<ul class="actions">
-		<li><a href="mailto:{{ site.email }}" class="button primary icon solid fa-envelope">Email me</a></li>
-		<li><a href="https://github.com/{{ site.github_username }}" class="button icon brands fa-github">GitHub</a></li>
-	</ul>
+	<div class="btn-row">
+		<a href="mailto:{{ site.email }}" class="btn">Email me</a>
+		<a href="https://github.com/{{ site.github_username }}" class="btn btn--ghost">GitHub</a>
+	</div>
 </section>
