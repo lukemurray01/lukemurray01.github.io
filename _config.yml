@@ -1,0 +1,49 @@
+title: Luke Murray
+tagline: Physics &amp; Quantitative
+description: >-
+  Luke Murray — physics & mathematics student focused on stochastic numerics,
+  quantitative finance, data science and risk. Projects, lecture notes and a blog.
+author: Luke Murray
+email: lukemurray220@gmail.com
+url: "https://lukemurray01.github.io"
+baseurl: ""
+github_username: lukemurray01
+
+# Build settings (kept plugin-free so local build == GitHub Pages build)
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null          # let MathJax handle math instead of kramdown
+  syntax_highlighter: rouge
+
+# Pretty URLs for blog posts only; pages keep their flat .html paths so existing
+# links (and note-wrapper back-links) stay valid.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:slug/
+
+# Site navigation (consumed by _includes/header.html)
+nav:
+  - title: Home
+    url: /
+  - title: Notes
+    url: /notes.html
+  - title: Blog
+    url: /blog.html
+  - title: CV
+    url: /cv.html
+  - title: Contact
+    url: /#contact
+
+exclude:
+  - README.md
+  - README.txt
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gem

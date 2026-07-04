@@ -1,252 +1,172 @@
-<!DOCTYPE HTML>
-<!--
-	Portfolio for Luke Murray.
-	Built on Phantom by HTML5 UP (html5up.net | @ajlkn) — CCA 3.0 license.
--->
-<html lang="en">
-	<head>
-		<title>Luke Murray — Physics &amp; Quantitative Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Luke Murray — physics and mathematics student with a quantitative and computational focus (Python, Fourier analysis, numerical methods). Portfolio, projects and CV." />
-		<meta name="author" content="Luke Murray" />
-		<!-- Open Graph: makes shared links preview nicely for recruiters -->
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Luke Murray — Physics &amp; Quantitative Portfolio" />
-		<meta property="og:description" content="Physics &amp; maths student with a quantitative, computational focus. Projects, computational physics and CV." />
-		<meta property="og:url" content="https://lukemurray01.github.io/" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/portfolio.css" />
-		<link rel="icon" href="images/logo.svg" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+---
+layout: default
+seo_title: Luke Murray — Physics & Quantitative Portfolio
+description: Luke Murray — physics & mathematics student focused on stochastic numerics for CIR and CEV processes, quantitative finance, data science and risk.
+---
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Luke Murray</span>
-							</a>
-							<nav>
-								<ul>
-									<li><a href="#menu">Menu</a></li>
-								</ul>
-							</nav>
-						</div>
-					</header>
+<!-- Hero -->
+<section class="hero">
+	<!-- To add a headshot: drop a square image at images/profile.jpg and replace the
+	     placeholder <div> below with:
+	     <img class="avatar" src="{{ '/images/profile.jpg' | relative_url }}" alt="Luke Murray" /> -->
+	<div class="avatar-placeholder"><span>LM</span></div>
+	<h1>Luke Murray</h1>
+	<p class="tagline">
+		Physics &amp; mathematics student working on <strong>stochastic numerics for CIR
+		and CEV processes</strong>. I turn rigorous maths into reproducible Python — with
+		an eye on <strong>quantitative finance, data science and risk</strong>.
+	</p>
+	<ul class="badges">
+		<li>Stochastic Calculus</li>
+		<li>Monte Carlo</li>
+		<li>Python</li>
+		<li>NumPy</li>
+		<li>Fourier Analysis</li>
+		<li>Numerical Methods</li>
+	</ul>
+	<ul class="actions">
+		<li><a href="#projects" class="button primary">Featured work</a></li>
+		<li><a href="{{ '/cv.html' | relative_url }}" class="button">View CV</a></li>
+	</ul>
+</section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#about">About</a></li>
-							<li><a href="index.html#skills">Skills</a></li>
-							<li><a href="index.html#projects">Projects</a></li>
-							<li><a href="cv.html">CV / Résumé</a></li>
-							<li><a href="index.html#contact">Contact</a></li>
-						</ul>
-					</nav>
+<!-- About -->
+<section id="about" class="section">
+	<h2>About</h2>
+	<div class="row">
+		<div class="col-8 col-12-medium">
+			<p>
+				I'm a physics and mathematics student who enjoys turning abstract theory
+				into working code. My thesis is on <strong>stochastic numerics for the CIR
+				and CEV processes</strong> — the mean-reverting and constant-elasticity-of-variance
+				diffusions that sit under interest-rate and equity/volatility models — where
+				the mathematical challenge is simulating them accurately without breaking
+				positivity or losing convergence order.
+			</p>
+			<p>
+				That workflow — <em>rigorous maths → reproducible code → clear
+				communication</em> — is exactly what quantitative finance, data science and
+				risk rely on. I'm looking for internships and graduate opportunities where I
+				can apply strong mathematical modelling and Python to real problems.
+			</p>
+		</div>
+		<div class="col-4 col-12-medium">
+			<ul class="alt">
+				<li><strong>Focus:</strong> Quant · Data Science · Risk</li>
+				<li><strong>Thesis:</strong> Stochastic numerics, CIR &amp; CEV</li>
+				<li><strong>Tools:</strong> Python, NumPy, Matplotlib, Jupyter</li>
+				<li><strong>Also:</strong> LaTeX, Git, scientific writing</li>
+			</ul>
+		</div>
+	</div>
+</section>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<!-- Skills -->
+<section id="skills" class="section">
+	<h2>Skills</h2>
+	<div class="skills">
+		<div class="skill-card">
+			<h3>Programming</h3>
+			<ul>
+				<li>Python (NumPy, SciPy, Matplotlib)</li>
+				<li>Jupyter notebooks</li>
+				<li>Monte Carlo simulation</li>
+				<li>Data analysis &amp; visualisation</li>
+				<li>LaTeX &amp; Git</li>
+			</ul>
+		</div>
+		<div class="skill-card">
+			<h3>Mathematics</h3>
+			<ul>
+				<li>Stochastic calculus &amp; SDEs</li>
+				<li>Fourier analysis &amp; series</li>
+				<li>Linear algebra</li>
+				<li>Differential equations (ODEs/PDEs)</li>
+				<li>Numerical &amp; computational methods</li>
+			</ul>
+		</div>
+		<div class="skill-card">
+			<h3>Quantitative</h3>
+			<ul>
+				<li>Probability &amp; statistics</li>
+				<li>Discretisation schemes &amp; convergence</li>
+				<li>Mathematical modelling</li>
+				<li>Simulation of stochastic systems</li>
+				<li>Clear technical communication</li>
+			</ul>
+		</div>
+	</div>
+</section>
 
-							<!-- Hero -->
-								<section class="hero">
-									<!-- To add a headshot: drop a square image at images/profile.jpg and
-									     replace the placeholder <div> below with:
-									     <img class="avatar" src="images/profile.jpg" alt="Luke Murray" /> -->
-									<div class="avatar-placeholder"><span>LM</span></div>
-									<h1>Luke Murray</h1>
-									<p class="tagline">
-										Physics &amp; mathematics student with a quantitative, computational focus —
-										building intuition and code around Fourier analysis, differential equations
-										and numerical methods. Interested in <strong>quantitative finance, data
-										science and risk</strong>.
-									</p>
-									<ul class="badges">
-										<li>Python</li>
-										<li>NumPy</li>
-										<li>Fourier Analysis</li>
-										<li>Numerical Methods</li>
-										<li>Probability &amp; Statistics</li>
-										<li>LaTeX</li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#projects" class="button primary">View Projects</a></li>
-										<li><a href="cv.html" class="button">View CV</a></li>
-									</ul>
-								</section>
+<!-- Featured work -->
+<section id="projects" class="section">
+	<h2>Featured work</h2>
+	<p class="subtle">Curated pieces that show the maths, the Python and the write-up behind them.</p>
+	<section class="tiles">
+		<article class="style5">
+			<span class="image">
+				<img src="{{ '/images/pic13.jpg' | relative_url }}" alt="" />
+			</span>
+			<a href="{{ '/blog/cir-cev-stochastic-numerics/' | relative_url }}">
+				<h2>Stochastic Numerics: CIR &amp; CEV</h2>
+				<div class="content">
+					<p>Why naïve Euler breaks on square-root and CEV diffusions — and the
+						schemes that fix it. My thesis area, written up.</p>
+				</div>
+			</a>
+		</article>
+		<article class="style3">
+			<span class="image">
+				<img src="{{ '/images/pic02.jpg' | relative_url }}" alt="" />
+			</span>
+			<a href="{{ '/notes.html' | relative_url }}">
+				<h2>Computational Lecture Notes</h2>
+				<div class="content">
+					<p>Typed notes and worked solutions across physics &amp; maths, each
+						checked computationally in Python.</p>
+				</div>
+			</a>
+		</article>
+		<article class="style2">
+			<span class="image">
+				<img src="{{ '/images/pic07.jpg' | relative_url }}" alt="" />
+			</span>
+			<a href="{{ '/blog.html' | relative_url }}">
+				<h2>Blog</h2>
+				<div class="content">
+					<p>Short expositions on stochastic numerics, quantitative methods and
+						the maths behind them.</p>
+				</div>
+			</a>
+		</article>
+	</section>
+</section>
 
-							<!-- About -->
-								<section id="about" class="section">
-									<h2>About</h2>
-									<div class="row">
-										<div class="col-8 col-12-medium">
-											<p>
-												I'm a physics and mathematics student who enjoys turning abstract
-												theory into working code. Most of my coursework becomes a
-												computational project: I derive the maths, implement it in Python,
-												and use notebooks to visualise and sanity-check the results — from
-												decomposing signals with Fourier series to integrating the equations
-												of motion in classical mechanics and electrodynamics.
-											</p>
-											<p>
-												That workflow — <em>rigorous maths → reproducible code →
-												clear communication</em> — is exactly what quantitative finance,
-												data science and risk roles rely on. I'm currently looking for
-												internships and graduate opportunities where I can apply strong
-												mathematical modelling and Python to real problems.
-											</p>
-										</div>
-										<div class="col-4 col-12-medium">
-											<ul class="alt">
-												<li><strong>Focus:</strong> Quant · Data Science · Risk</li>
-												<li><strong>Tools:</strong> Python, NumPy, Matplotlib, Jupyter</li>
-												<li><strong>Maths:</strong> Fourier, linear algebra, ODEs/PDEs</li>
-												<li><strong>Also:</strong> LaTeX, Git, scientific writing</li>
-											</ul>
-										</div>
-									</div>
-								</section>
+<!-- Latest from the blog -->
+{%- if site.posts.size > 0 %}
+<section id="latest" class="section">
+	<h2>From the blog</h2>
+	<ul class="post-list">
+		{%- for post in site.posts limit: 4 %}
+		<li>
+			<span class="post-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			{%- if post.subtitle %}<span class="post-list-desc">{{ post.subtitle }}</span>{% endif %}
+		</li>
+		{%- endfor %}
+	</ul>
+	<ul class="actions">
+		<li><a href="{{ '/blog.html' | relative_url }}" class="button">All posts</a></li>
+	</ul>
+</section>
+{%- endif %}
 
-							<!-- Skills -->
-								<section id="skills" class="section">
-									<h2>Skills</h2>
-									<div class="skills">
-										<div class="skill-card">
-											<h3>Programming</h3>
-											<ul>
-												<li>Python (NumPy, SciPy, Matplotlib)</li>
-												<li>Jupyter notebooks</li>
-												<li>Data analysis &amp; visualisation</li>
-												<li>LaTeX for technical writing</li>
-												<li>Git &amp; GitHub</li>
-											</ul>
-										</div>
-										<div class="skill-card">
-											<h3>Mathematics</h3>
-											<ul>
-												<li>Fourier analysis &amp; series</li>
-												<li>Linear algebra</li>
-												<li>Differential equations (ODEs/PDEs)</li>
-												<li>Numerical &amp; computational methods</li>
-												<li>Vector calculus</li>
-											</ul>
-										</div>
-										<div class="skill-card">
-											<h3>Quantitative</h3>
-											<ul>
-												<li>Probability &amp; statistics</li>
-												<li>Mathematical modelling</li>
-												<li>Simulation of physical systems</li>
-												<li>Problem decomposition</li>
-												<li>Clear technical communication</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							<!-- Projects -->
-								<section id="projects" class="section">
-									<h2>Projects</h2>
-									<p class="subtle">Computational coursework and worked examples — each demonstrates
-										the maths, the Python implementation and the write-up behind it.</p>
-									<section class="tiles">
-										<article class="style3">
-											<span class="image">
-												<img src="images/pic02.jpg" alt="" />
-											</span>
-											<a href="Fouriermenu.html">
-												<h2>Fourier Methods</h2>
-												<div class="content">
-													<p>Signal decomposition &amp; series convergence, worked and
-														visualised in Python.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style1">
-											<span class="image">
-												<img src="images/pic03.jpg" alt="" />
-											</span>
-											<a href="Physicsmenu.html">
-												<h2>Electrodynamics II</h2>
-												<div class="content">
-													<p>Fields, potentials and Maxwell's equations — notes and
-														computed worked examples.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style2">
-											<span class="image">
-												<img src="images/pic07.jpg" alt="" />
-											</span>
-											<a href="Classical/ClassicalMech.html">
-												<h2>Classical Mechanics</h2>
-												<div class="content">
-													<p>Dynamics and the equations of motion, integrated
-														numerically. <em>Work in progress.</em></p>
-												</div>
-											</a>
-										</article>
-										<article class="style4">
-											<span class="image">
-												<img src="images/pic01.jpg" alt="" />
-											</span>
-											<a href="Physics1.2menu.html">
-												<h2>Introductory Physics II</h2>
-												<div class="content">
-													<p>Eleven lectures of foundational physics with computational
-														worked examples.</p>
-												</div>
-											</a>
-										</article>
-									</section>
-								</section>
-
-							<!-- Contact -->
-								<section id="contact" class="section">
-									<h2>Get in touch</h2>
-									<p>The quickest way to reach me is by email. You can also find my code on GitHub.</p>
-									<ul class="actions">
-										<li><a href="mailto:lukemurray220@gmail.com" class="button primary icon solid fa-envelope">Email me</a></li>
-										<li><a href="https://github.com/lukemurray01" class="button icon brands fa-github">GitHub</a></li>
-									</ul>
-								</section>
-
-						</div>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Connect</h2>
-								<ul class="icons">
-									<li><a href="https://github.com/lukemurray01" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<!-- Add your LinkedIn: replace # with your profile URL -->
-									<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:lukemurray220@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; 2026 Luke Murray. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<!-- Contact -->
+<section id="contact" class="section">
+	<h2>Get in touch</h2>
+	<p>The quickest way to reach me is by email. You can also find my code on GitHub.</p>
+	<ul class="actions">
+		<li><a href="mailto:{{ site.email }}" class="button primary icon solid fa-envelope">Email me</a></li>
+		<li><a href="https://github.com/{{ site.github_username }}" class="button icon brands fa-github">GitHub</a></li>
+	</ul>
+</section>

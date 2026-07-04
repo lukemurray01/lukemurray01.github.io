@@ -1,0 +1,31 @@
+{%- if page.seo_title -%}
+  {%- assign full_title = page.seo_title -%}
+{%- elsif page.title -%}
+  {%- assign full_title = page.title | append: " — " | append: site.title -%}
+{%- else -%}
+  {%- assign full_title = site.title | append: " — Physics & Quantitative Portfolio" -%}
+{%- endif -%}
+{%- assign desc = page.description | default: site.description | strip_newlines -%}
+<title>{{ full_title }}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ desc }}" />
+<meta name="author" content="{{ site.author }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ full_title }}" />
+<meta property="og:description" content="{{ desc }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+<link rel="icon" href="{{ '/images/logo.svg' | relative_url }}" />
+<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+{%- if page.mathjax %}
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+{%- endif %}
