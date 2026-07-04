@@ -1,187 +1,97 @@
-<!DOCTYPE HTML>
-<!--
-	CV / Résumé page for Luke Murray.
-	Built on Phantom by HTML5 UP (html5up.net | @ajlkn) — CCA 3.0 license.
--->
-<html lang="en">
-	<head>
-		<title>Luke Murray — CV</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Curriculum vitae for Luke Murray — physics &amp; mathematics student focused on quantitative finance, data science and risk." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/portfolio.css" />
-		<link rel="icon" href="images/logo.svg" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+---
+layout: default
+title: CV
+seo_title: Luke Murray — CV
+description: Curriculum vitae for Luke Murray — physics & mathematics student focused on stochastic numerics, quantitative finance, data science and risk.
+---
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Luke Murray</span>
-							</a>
-							<nav>
-								<ul>
-									<li><a href="#menu">Menu</a></li>
-								</ul>
-							</nav>
-						</div>
-					</header>
+<!-- CV header -->
+<div class="cv-header">
+	<div>
+		<h1 style="margin-bottom:0.1em;">Luke Murray</h1>
+		<p class="subtle" style="margin:0;">Physics &amp; Mathematics · Quant / Data Science / Risk</p>
+	</div>
+	<ul class="contact">
+		<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+		<li><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></li>
+		<!-- Add your LinkedIn URL here -->
+		<li><a href="{{ site.url }}">lukemurray01.github.io</a></li>
+	</ul>
+</div>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#about">About</a></li>
-							<li><a href="index.html#skills">Skills</a></li>
-							<li><a href="index.html#projects">Projects</a></li>
-							<li><a href="cv.html">CV / Résumé</a></li>
-							<li><a href="index.html#contact">Contact</a></li>
-						</ul>
-					</nav>
+<ul class="actions no-print">
+	<!-- "Download PDF" uses the browser's print-to-PDF (the print stylesheet renders a
+	     clean black-on-white CV). To offer a hand-made PDF instead, drop it at
+	     assets/Luke-Murray-CV.pdf and change the href below to it. -->
+	<li><a href="javascript:window.print()" class="button primary icon solid fa-download">Download PDF</a></li>
+</ul>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<section class="section">
+	<h2>Summary</h2>
+	<p>
+		Physics and mathematics student with a strong quantitative and computational
+		orientation. Thesis on stochastic numerics for CIR and CEV processes. Comfortable
+		moving from mathematical derivation to reproducible Python code and clear write-ups.
+		Seeking internship and graduate opportunities in quantitative finance, data science
+		and risk.
+	</p>
+</section>
 
-							<!-- CV header -->
-								<div class="cv-header">
-									<div>
-										<h1 style="margin-bottom:0.1em;">Luke Murray</h1>
-										<p class="subtle" style="margin:0;">Physics &amp; Mathematics · Quant / Data Science / Risk</p>
-									</div>
-									<ul class="contact">
-										<li><a href="mailto:lukemurray220@gmail.com">lukemurray220@gmail.com</a></li>
-										<li><a href="https://github.com/lukemurray01">github.com/lukemurray01</a></li>
-										<!-- Add your LinkedIn URL here -->
-										<li><a href="https://lukemurray01.github.io/">lukemurray01.github.io</a></li>
-									</ul>
-								</div>
+<section class="section">
+	<h2>Education</h2>
+	<div class="cv-entry">
+		<div class="meta">
+			<h3>BSc Physics &amp; Mathematics</h3>
+			<span class="when">Update: years</span>
+		</div>
+		<p class="subtle" style="margin:0 0 0.5em 0;">University College Cork <em>(update if different)</em></p>
+		<p>
+			Thesis: <em>Stochastic numerics for CIR and CEV processes</em> — positivity-preserving
+			discretisation schemes and their convergence. Relevant coursework: Fourier Methods,
+			Electrodynamics, Classical Mechanics, Linear Algebra, Differential Equations,
+			Probability. Coursework implemented and verified computationally in Python — see
+			<a href="{{ '/notes.html' | relative_url }}">Notes</a>.
+		</p>
+	</div>
+</section>
 
-								<ul class="actions no-print">
-									<!-- "Download PDF" uses the browser's print-to-PDF (the print stylesheet
-									     renders a clean black-on-white CV). To offer a hand-made PDF instead,
-									     drop it at assets/Luke-Murray-CV.pdf and change the href below to it. -->
-									<li><a href="javascript:window.print()" class="button primary icon solid fa-download">Download PDF</a></li>
-								</ul>
+<section class="section">
+	<h2>Technical Skills</h2>
+	<div class="row">
+		<div class="col-6 col-12-medium">
+			<ul class="alt">
+				<li><strong>Programming:</strong> Python, NumPy, SciPy, Matplotlib, Jupyter</li>
+				<li><strong>Tooling:</strong> Git, GitHub, LaTeX</li>
+			</ul>
+		</div>
+		<div class="col-6 col-12-medium">
+			<ul class="alt">
+				<li><strong>Mathematics:</strong> stochastic calculus/SDEs, Fourier analysis, linear algebra, ODEs/PDEs, numerical methods</li>
+				<li><strong>Quantitative:</strong> Monte Carlo, probability &amp; statistics, modelling</li>
+			</ul>
+		</div>
+	</div>
+</section>
 
-							<!-- Summary -->
-								<section class="section">
-									<h2>Summary</h2>
-									<p>
-										Physics and mathematics student with a strong quantitative and
-										computational orientation. Comfortable moving from mathematical
-										derivation to reproducible Python code and clear write-ups. Seeking
-										internship and graduate opportunities in quantitative finance, data
-										science and risk.
-									</p>
-								</section>
+<section class="section">
+	<h2>Selected Work</h2>
+	<div class="cv-entry">
+		<h3><a href="{{ '/blog/cir-cev-stochastic-numerics/' | relative_url }}">Stochastic numerics for CIR &amp; CEV processes</a></h3>
+		<p>Exposition of why naïve Euler–Maruyama fails on square-root and CEV diffusions and the
+			schemes (full-truncation Euler, exact simulation) that restore positivity and convergence.</p>
+	</div>
+	<div class="cv-entry">
+		<h3><a href="{{ '/notes.html' | relative_url }}">Computational lecture notes &amp; solutions</a></h3>
+		<p>Typed notes and worked examples across physics &amp; maths, each checked computationally
+			in Python and published as Jupyter notebooks.</p>
+	</div>
+</section>
 
-							<!-- Education -->
-								<section class="section">
-									<h2>Education</h2>
-									<div class="cv-entry">
-										<div class="meta">
-											<h3>BSc Physics &amp; Mathematics</h3>
-											<span class="when">Update: years</span>
-										</div>
-										<p class="subtle" style="margin:0 0 0.5em 0;">University College Cork <em>(update if different)</em></p>
-										<p>
-											Relevant coursework: Fourier Methods, Electrodynamics, Classical
-											Mechanics, Linear Algebra, Differential Equations, Introductory
-											Physics. Coursework consistently implemented and verified
-											computationally in Python — see
-											<a href="index.html#projects">Projects</a>.
-										</p>
-									</div>
-								</section>
-
-							<!-- Technical skills -->
-								<section class="section">
-									<h2>Technical Skills</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="alt">
-												<li><strong>Programming:</strong> Python, NumPy, SciPy, Matplotlib, Jupyter</li>
-												<li><strong>Tooling:</strong> Git, GitHub, LaTeX</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="alt">
-												<li><strong>Mathematics:</strong> Fourier analysis, linear algebra, ODEs/PDEs, numerical methods</li>
-												<li><strong>Quantitative:</strong> probability &amp; statistics, modelling, simulation</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							<!-- Projects -->
-								<section class="section">
-									<h2>Selected Projects</h2>
-									<div class="cv-entry">
-										<h3><a href="Fouriermenu.html">Fourier Methods</a></h3>
-										<p>Decomposition of signals into Fourier series with Python; explored
-											series convergence and reconstruction, visualised in Jupyter.</p>
-									</div>
-									<div class="cv-entry">
-										<h3><a href="Physicsmenu.html">Electrodynamics II</a></h3>
-										<p>Eight lectures of notes and computed worked examples on electric
-											and magnetic fields, potentials and Maxwell's equations.</p>
-									</div>
-									<div class="cv-entry">
-										<h3><a href="Physics1.2menu.html">Introductory Physics II</a></h3>
-										<p>Eleven lectures of foundational physics with accompanying
-											computational worked examples.</p>
-									</div>
-									<div class="cv-entry">
-										<h3><a href="Classical/ClassicalMech.html">Classical Mechanics</a></h3>
-										<p>Numerical integration of the equations of motion. <em>Work in progress.</em></p>
-									</div>
-								</section>
-
-							<!-- Additional -->
-								<section class="section">
-									<h2>Additional</h2>
-									<ul>
-										<li>Maintain a public portfolio of computational physics at
-											<a href="https://lukemurray01.github.io/">lukemurray01.github.io</a>.</li>
-										<li><em>Add here: awards, languages, activities, work experience.</em></li>
-									</ul>
-								</section>
-
-						</div>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Connect</h2>
-								<ul class="icons">
-									<li><a href="https://github.com/lukemurray01" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:lukemurray220@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; 2026 Luke Murray. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<section class="section">
+	<h2>Additional</h2>
+	<ul>
+		<li>Maintain a public portfolio and blog at
+			<a href="{{ site.url }}">lukemurray01.github.io</a>.</li>
+		<li><em>Add here: awards, languages, activities, work experience.</em></li>
+	</ul>
+</section>

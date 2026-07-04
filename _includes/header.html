@@ -1,0 +1,21 @@
+<header id="header">
+	<div class="inner">
+		<a href="{{ '/' | relative_url }}" class="logo">
+			<span class="symbol"><img src="{{ '/images/logo.svg' | relative_url }}" alt="" /></span><span class="title">{{ site.title }}</span>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="#menu">Menu</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<nav id="menu">
+	<h2>Menu</h2>
+	<ul>
+		{%- for item in site.nav %}
+		<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+		{%- endfor %}
+	</ul>
+</nav>

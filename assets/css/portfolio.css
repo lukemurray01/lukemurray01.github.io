@@ -249,3 +249,126 @@
 		background: #000 !important;
 	}
 }
+
+/* ---- Blog & posts ---- */
+.post-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 2em 0;
+}
+
+.post-list > li {
+	padding: 1em 0;
+	border-top: solid 1px rgba(255, 255, 255, 0.1);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0.25em 1em;
+}
+
+.post-list > li:first-child {
+	border-top: 0;
+}
+
+.post-list-date {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	min-width: 8em;
+}
+
+.post-list-title {
+	font-weight: 700;
+	border-bottom: 0;
+	box-shadow: inset 0 -1px 0 0 #f2849e;
+}
+
+.post-list-desc {
+	flex-basis: 100%;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.95em;
+	padding-left: 9em;
+}
+
+.post-list-tags {
+	flex-basis: 100%;
+	padding-left: 9em;
+}
+
+.post-tag,
+.post-list--full .post-tag {
+	display: inline-block;
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.7);
+	border: solid 1px rgba(255, 255, 255, 0.2);
+	border-radius: 3px;
+	padding: 0.15em 0.6em;
+	margin: 0.35em 0.35em 0 0;
+}
+
+@media screen and (max-width: 736px) {
+	.post-list-desc,
+	.post-list-tags {
+		padding-left: 0;
+	}
+}
+
+/* Post page */
+.post-header {
+	margin-bottom: 2em;
+}
+
+.post-header .badges {
+	list-style: none;
+	padding: 0;
+	margin: 0.75em 0 0 0;
+}
+
+.post-header .badges li {
+	display: inline-block;
+	padding: 0.3em 0.9em;
+	margin: 0.25em 0.25em 0 0;
+	border: solid 1px rgba(255, 255, 255, 0.25);
+	border-radius: 3px;
+	font-size: 0.72em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.post-meta {
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 0.5em;
+}
+
+.post-content {
+	max-width: 44em;
+}
+
+.post-content h2 {
+	margin-top: 1.5em;
+}
+
+.post-content pre {
+	font-size: 0.9em;
+}
+
+/* MathJax display blocks: allow horizontal scroll on small screens */
+.post-content mjx-container[display="true"] {
+	overflow-x: auto;
+	overflow-y: hidden;
+	max-width: 100%;
+}
+
+.post-footer {
+	margin-top: 2.5em;
+	border-top: solid 1px rgba(255, 255, 255, 0.1);
+	padding-top: 1.5em;
+}
